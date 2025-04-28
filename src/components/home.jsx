@@ -25,7 +25,7 @@ const PokemonTypes = [
       const pokemonList = [];
       try{
         console.log('Fetching');
-        for (let i = 1; i <= 150; i++) {
+        for (let i = 1; i <= 50; i++) {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}/`);
         const data = await res.json();
         pokemonList.push({
